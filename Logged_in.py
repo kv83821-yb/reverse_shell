@@ -45,6 +45,13 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(790, 393, 141, 51))
+        self.pushButton_2.clicked.connect(self.connect_toServer)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton")
         self.verticalScrollBar = QtWidgets.QScrollBar(self.centralwidget)
         self.verticalScrollBar.setGeometry(QtCore.QRect(720, 129, 20, 411))
         self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
@@ -70,7 +77,7 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "USER:"))
         self.pushButton.setText(_translate("MainWindow", "LogOut"))
         self.label_2.setText(_translate("MainWindow", "LOG:"))
-
+        self.pushButton_2.setText(_translate("MainWindow", "Connect"))
 
 if __name__ == "__main__":
     import sys

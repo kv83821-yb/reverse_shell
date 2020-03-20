@@ -38,7 +38,6 @@ class Ui_MainWindow(object):
             self.ui.setupUi(self.MainWindow)
             self.ui.setUsername(username)
             self.MainWindow.show()
-            self.ui.connect_toServer()
         else:
             self.show_message("Warning","Check username and password")
             

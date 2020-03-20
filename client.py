@@ -12,7 +12,7 @@ class Connect:
         
     def server_Communication():
         while True:
-            
+
             data = Connect.s.recv(1024)
             #:2 gets the first two characters to check if the command is cd
             #3: gets the path in the command is cd
